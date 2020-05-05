@@ -11,3 +11,4 @@ if hostname.lower() == "mtg":
 
 # Output at the end of the script every time
 print("Exiting the script")
+
