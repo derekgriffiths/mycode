@@ -2,23 +2,24 @@
 
 print("Welcome to the 70's & 80's movie questionnaire!")
 
-print("We'd like to ask you a few questions about movies in those two decades.")
+print("We'd like to ask you a few questions about movies in those two decades.\n")
 
-print("Which decade do you prefer?")
+print("Which decade do you prefer?\n")
 
 # Asks the user, which decade they prefer
 round = 0
 decade = " "
 seventy = " "
+eighty = " "
 
 while round < 4 and decade !="a" and decade !="b":
     decade = input("For the 1970's type 'A'; for the 1980's type 'B':  ")   
     decade = decade.lower()
     round += 1
     if decade == "a":
-        print("Great, I also liked the 70's for movies!")
+        print("Great, I also liked the 70's for movies!\n")
     elif decade == "b":
-        print("Awesome! That's my favourite decade in film too!")
+        print("Awesome! That's my favourite decade in film too!\n")
     elif round == 4:
         print("Sorry. I think you're having troubles. Please try again later")
     else:
@@ -29,7 +30,7 @@ if decade == "a":
     print("1: Star Wars")
     print("2: The Exorcist")
     print("3: All the President's Men")
-    print("4: Patton")
+    print("4: Patton\n")
     round = 0
     while round < 4 and seventy !="1" and seventy !="2" and seventy !="3" and seventy !="4":
         seventy = input("Pick a number:  1 through 4:  ")
@@ -51,18 +52,18 @@ elif decade == "b":
     print("1: Back to the Future")
     print("2: Return of the Jedi")
     print("3: Raiders of the Lost Ark")
-    print("4: Poltergeist")
+    print("4: Poltergeist\n")
     round = 0
-    while round < 4 and seventy !="1" and seventy !="2" and seventy !="3" and seventy !="4":
-        seventy = input("Pick a number:  1 through 4:  ")
+    while round < 4 and eighty !="1" and eighty !="2" and eighty !="3" and eighty !="4":
+        eighty = input("Pick a number:  1 through 4:  ")
         round += 1
-        if seventy == "1":
+        if eighty == "1":
             print("Back to the Future ... classic!")
-        elif seventy == "2":
+        elif eighty == "2":
             print("Jedi ... Lucas' last good movie")
-        elif seventy == "3":
+        elif eighty == "3":
             print("Raiders ... one of the greatest!")
-        elif seventy == "4":
+        elif eighty == "4":
             print("Poltergeist ... a personal favorite")
         elif round == 4:
             print("Sorry. I think you're having troubles. Please try again later.")
